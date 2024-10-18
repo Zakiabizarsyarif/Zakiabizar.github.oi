@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero benner</title>
+    <style>
+        .pertama {
+            background: rgb(254, 252, 255);
+            background: linear-gradient(90deg, rgb(229, 222, 231) 0%, rgb(246, 246, 246) 35%, rgb(223, 223, 223) 100%);
+            width: 100vw;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 40px;
+            box-shadow: 10px 8px 10px 0 rgba(29, 20, 26, 0.2);
+            border: 5px white solid;
+        }
+        .text {
+            color: white;
+            margin-top: 50px;
+            margin-left: 20px;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button {
+            border: none;
+            height: 30px;
+            font-size: 15px;
+            padding: 1px 10px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight:bold;
+            background-color: rgb(188, 116, 214);
+        }
+        button:hover {
+          background-color: gray;
+          color: black;
+        }
+        .b2 {
+            margin-left: 10px;
+            background-color: rgb(38, 198, 158);
+            color: white;
+        }
+        .navigasi1 {
+            display:flex;
+            gap: 10px;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px ;
+        }
+        span {
+            color: slateblue;
+        }
+        .logozaki1 {
+            width: 100px;
+            height:100px ;
+        }
+        #flex-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-item{
+            flex-basis: 100%;
+            height: 200px;
+            width: 200px;
+            margin: 4px;
+            background-color: rgb(171, 186, 215);
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img{
+            height: 100px;
+        }
+        .kedua{
+            background: rgb(254, 252, 255);
+            background: linear-gradient(90deg, rgb(229, 222, 231) 0%, rgb(246, 246, 246) 35%, rgb(223, 223, 223) 100%);
+            width: 100vw;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-top: 40px;
+            box-shadow: 10px 8px 10px 0 rgba(29, 20, 26, 0.2);
+            border: 5px white solid;
+        }
+        .text {
+            color: white;
+            margin-top: 50px;
+            margin-left: 20px;
+            color: black;
+        }
+        button {
+            border: none;
+            height: 30px;
+            font-size: 15px;
+            padding: 1px 10px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight:bold;
+            background-color: rgb(188, 116, 214);
+        }
+        button:hover {
+          background-color: gray;
+          color: black;
+        }
+        .b2 {
+            margin-left: 10px;
+            background-color: rgb(38, 198, 158);
+            color: white;
+        }
+        .navigasi {
+            display:flex;
+            gap: 10px;
+            padding: 50px;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px ;
+        }
+        span {
+            color: slateblue;
+        }
+        #flex-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .flex-item{
+            flex-basis: 100%;
+            height: 300px;
+            width: 200px;
+            margin: 4px;
+            background-color: rgb(196, 204, 218);
+            font-size: 20px;
+            color: rgb(45, 40, 40);
+         align-items: center;
+        }
+        img{
+            height: 100px;
+        }
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ketiga {
+            box-shadow: 0 4px 8px color black;
+            padding: 10px;
+            width: 350px;
+            height: 240;
+            background-color: white;
+            box-shadow: 0 5px 5px;
+            display: inline-block;
+        }
+        img {
+            width: 345px;
+            height: 200px;
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-family:Georgia, Times, 'Times New Roman', serif;
+           
+        }
+        .harga {
+            font-weight: bold;
+            font-size: 18px;
+            float: right;
+          
+            
+        }
+    
+        .keempat {
+            box-shadow: 0 4px 8px color black;
+            padding: 10px;
+            width: 350px;
+            height: 240;
+            background-color: white;
+            box-shadow: 0 5px 5px;
+            display: inline-block;
+        }
+        img {
+            width: 345px;
+            height: 200px;
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 1px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        .harga {
+            font-weight: bold;
+            font-size: 18px;
+            float: right;
+          
+            
+        }
+        .kelima {
+            box-shadow: 0 4px 8px color black;
+            padding: 10px;
+            width: 350px;
+            height: 240;
+            background-color: white;
+            box-shadow: 0 5px 5px;
+            display: inline-block;
+        }
+        img {
+            width: 345px;
+            height: 200px;
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 1px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .harga {
+            font-weight: bold;
+            font-size: 18px;
+            float: right;
+          
+            
+        }
+
+        .gambar {
+            justify-content: center;
+            align-items: center;
+        }
+        
+    
+    .contact {
+        padding: 50px;
+        background-color: #f9f9f9;
+        margin-top: 25px;
+      }
+      
+      .contact h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .contact-form input, .contact-form select, .contact-form textarea {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid slateblue;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      .contact-form .btn {
+        background-color: slateblue;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .button-submit button {
+      background-color: slateblue;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      }
+      .checkbox{
+      margin-left: 110px;
+      }
+      .button-submit{
+      margin-left: 570px;
+      }
+      .p{
+        text-align: center;
+      }
+      h6{
+        text-align: center;
+      }
+      .button5{
+        color: slateblue;
+        border: 2px solid slateblue;
+        background: #f9f9f9;
+        height: 55px;
+      }
+      .button6{
+        height: 55px;
+      }
+      .zaki2{
+        width: 100px;
+        height:100px ;
+      }
+      .navigasi2{
+        display: flex;
+        gap: 10px;
+        text-align: center;
+      }
+      .footer{
+       display: flex;
+       justify-content: center;
+       align-items: center;  
+      }
+        
+     
+        
+            
+        
+        
+       
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/zaki.jfif" class="logozaki1">
+        <ul class="navigasi ">
+            <li><a href="#"><span>Home</span></a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About me</a></li>
+           
+        </ul>
+        <button class="button5">Contact me</button>
+    </header>
+   
+    <div class="pertama">
+        <img class="img" src="jaki2.jfif" alt="profile">
+        <div class="text">
+            <p>assalamualaikum-warahmatullahi-wabarakatuh Nama Zaki</p> 
+            <h2>Membangun <span>Hafizh Qur'an</span> impian anda dengan kualitas hafalan yg kuat dan Mutqin</h2>
+            <p>Ana adalah seorang hafizh qur'an yg berpengalaman yg siap membantu anda
+        
+            </p>
+            <div>
+                <button class="button6">Get in touch</button>
+            </div>
+        </div>
+        </div>
+        <div class="skills">
+            <p>My skills</p>
+            <h2>Keahlian Saya</h2>
+        </div>
+    <div>
+    <div id="flex-container"> 
+    <div class="flex-item">
+        <img src="/ff kw.png" class="gambar">
+        <p>Ini adalah hasil karya saya sendiri </p>
+        <h1></h1>
+        
+    </div>
+    <div class="flex-item">
+        <img src="/Zaki abizar syarif.png">
+        <p>Ana pernah saya santri teladan di pondok tahfiz plus abu dzar</p>
+        
+    </div>
+    <div class="flex-item">
+        <img src="/kabel.png">
+        <p>ini adalah karya ana belajar kintercad</p>
+        
+    </div>
+    <div class="flex-item">
+        <img src="/bola.webp">
+        <p>menggocek musuh dengan mudah</p>
+    </div>
+   
+    </div>
+    <div class="kedua">
+        <img class="img" src="/orang ganteng.jfif" alt="profile">
+        <div class="text">
+            <p>About me</p> 
+            <h2>Tentang Saya</h2>
+            <p>Nama ana Zaki abizar syarif ana seorang hafiz qur'an yg sedang menghafal al-qur'an dan sedang belajar di pondok abudzar
+            jika antum kepo dengan ana langsung japri ana terbuka ko insyaallah
+        ##085211977881            </p>
+            <div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="skills">
+        <p>Recent</p>
+        <h2>My portfolio</h2>
+    </style>
+</head>
+<body>
+   <div class="pertama">
+
+    <div class=ketiga>
+        <img src="/17 agustus.jpg" alt="foto">
+        <h2>Foto pas lagi lomba 17 agustus di abu dzar</h2>
+      
+    </div>
+    <div class=keempat>
+        <img src="/Merah dan Kuning Ilustrasi Wahana Rumah Hantu Flyer.png" alt="foto">
+        <p>ini adalah design Rumah </p>
+    </div>
+    <div class=kelima>
+        <img src="/17 agustus 2024 abu dzar.jpg" alt="foto">
+        <p>Foto pas udah selesai lomba 17 agustus di abu dzar</p>
+    </div>
+   </div>
+    <section class="contact">
+        <p class="p"> Get In Touch</p>   
+        <h2>Contact Me</h2>     
+        <h6> japri ana aja misal nya antum kepo</h6> 
+        <form class="contact-form">
+            <input type="text" name="first-name" placeholder="First name">
+            <input type="text" name="last-name" placeholder="Last name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="tel" name="phone" placeholder="Phone number">
+            <select>
+                <option>Pilih topik...</option>
+                <option>Web Development</option>
+                <option>UI/UX Design</option>
+                <option>Branding</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Type your message..."></textarea>
+            <label>
+                <input type="checkbox"> I accept the terms
+            </label>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section >
+    <footer><img src="/zaki.jfif" class="zaki2">
+        <ul class="navigasi2 ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact me</a></li>
+        </footer>
+    
+    
+    
+    
+      
+      
+    
+   
+
+    
+
+
+                
+            
+</style>
+</head>
+<body>
+</body>
+</html>
